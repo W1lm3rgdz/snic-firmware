@@ -1,0 +1,114 @@
+
+
+--NEC 
+local NEC_PULSE_US   = 1000000 / 38000
+
+local NEC_HDR_MARK   = 9000
+local NEC_HDR_SPACE  = 4500
+local NEC_BIT_MARK   = 560
+local NEC_ONE_SPACE  = 1690
+local NEC_ZERO_SPACE = 560
+local NEC_RPT_SPACE  = 2250
+
+--SONY
+local SONY_HDR_MARK           = 2400
+local SONY_HDR_SPACE          = 600
+local SONY_ONE_MARK           = 1200
+local SONY_ZERO_MARK          = 600
+local SONY_RPT_LENGTH         = 45000
+local SONY_DOUBLE_SPACE_USECS = 500  --usually ssee 713 - not using ticks as get number wrapround
+
+--WHYNTER
+local WHYNTER_HDR_MARK  =  2850
+local WHYNTER_HDR_SPACE =  2850
+local WHYNTER_BIT_MARK  =  750
+local WHYNTER_ONE_MARK  =  750
+local WHYNTER_ONE_SPACE =  2150
+local WHYNTER_ZERO_MARK =  750
+local WHYNTER_ZERO_SPACE = 750
+
+--SANYO
+local SANYO_HDR_MARK           = 3500  -- seen range 3500
+local SANYO_HDR_SPACE          = 950   --  seen 950
+local SANYO_ONE_MARK           = 2400  -- seen 2400  
+local SANYO_ZERO_MARK          = 700   --  seen 700
+local SANYO_DOUBLE_SPACE_USECS = 800   -- usually ssee 713 - not using ticks as get number wrapround
+local SANYO_RPT_LENGTH         = 45000
+
+--MITSUBISHI
+local MITSUBISHI_HDR_SPACE = 350   --  7*50+100
+local MITSUBISHI_ONE_MARK  = 1950  -- 41*50-100
+local MITSUBISHI_ZERO_MARK = 750   -- 17*50-100
+
+--RC5
+local RC5_T1         = 889
+local RC5_RPT_LENGTH = 46000
+
+--RC6
+local RC6_HDR_MARK   = 2666
+local RC6_HDR_SPACE  = 889
+local RC6_T1         = 444
+local RC6_RPT_LENGTH = 46000
+
+--SHARP
+local SHARP_BIT_MARK    = 245
+local SHARP_ONE_SPACE   = 1805
+local SHARP_ZERO_SPACE  = 795
+local SHARP_GAP         = 600000
+local SHARP_TOGGLE_MASK = 0x3FF
+local SHARP_RPT_SPACE   = 3000
+
+--DISH
+local DISH_HDR_MARK   = 400
+local DISH_HDR_SPACE  = 6100
+local DISH_BIT_MARK   = 400
+local DISH_ONE_SPACE  = 1700
+local DISH_ZERO_SPACE = 2800
+local DISH_RPT_SPACE  = 6200
+local DISH_TOP_BIT    = 0x8000
+
+--PANASONIC
+local PANASONIC_HDR_MARK   = 3502
+local PANASONIC_HDR_SPACE  = 1750
+local PANASONIC_BIT_MARK   = 502
+local PANASONIC_ONE_SPACE  = 1244
+local PANASONIC_ZERO_SPACE = 400
+
+--JVC
+local JVC_HDR_MARK   = 8000
+local JVC_HDR_SPACE  = 4000
+local JVC_BIT_MARK   = 600
+local JVC_ONE_SPACE  = 1600
+local JVC_ZERO_SPACE = 550
+local JVC_RPT_LENGTH = 60000
+
+--LG
+local LG_HDR_MARK   = 8000
+local LG_HDR_SPACE  = 4000
+local LG_BIT_MARK   = 600
+local LG_ONE_SPACE  = 1600
+local LG_ZERO_SPACE = 550
+local LG_RPT_LENGTH = 60000
+
+--SAMSUNG
+local SAMSUNG_HDR_MARK   = 4500
+local SAMSUNG_HDR_SPACE  = 4500
+local SAMSUNG_BIT_MARK   = 590
+local SAMSUNG_ONE_SPACE  = 1690
+local SAMSUNG_ZERO_SPACE = 590
+local SAMSUNG_RPT_SPACE  = 2250
+
+
+local NEC_BITS        = 32
+local SONY_BITS       = 12
+local SANYO_BITS      = 12
+local MITSUBISHI_BITS = 16
+local MIN_RC5_SAMPLES = 11
+local MIN_RC6_SAMPLES = 1
+local PANASONIC_BITS  = 48
+local JVC_BITS        = 16
+local LG_BITS         = 28
+local SAMSUNG_BITS    = 32
+local WHYNTER_BITS    = 32
+
+
